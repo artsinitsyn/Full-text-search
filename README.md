@@ -17,7 +17,7 @@ Frontend (React) --> [port 3000](http://localhost:3000)
 End Point of Search --> [test](http://localhost:8000/api/search/?q=test)
 
 
-**Launch Guide** (from the root of the project, works well on Ubuntu 24.04 LTS):
+**Launch Guide** (from the root of the project, works well on Ubuntu 24.04 LTS, something may need depands with your system):
 
 ```docker-compose up --build```
 
@@ -39,7 +39,7 @@ curl -X PUT "http://localhost:9200/books/_settings" \
 
 ```curl "http://localhost:9200/books/_count"```
 
-```cntr+d```
+```Cntr+D```
 
 ```docker-compose restart backend```
 
