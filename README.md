@@ -1,13 +1,13 @@
 # Full-text-search
 My simple library explorer. Using this application, you can organize a full-text search. The 20 best books of English literature are used as a library.The data is indexed in OpenSearch. The possibility of a faceted search has been implemented (group filtering of results by genre, year, and keywords).
 
-Stack:
+**Stack:**
 - Django REST Framework
 - OpenSearch
 - React with Material UI
 - Docker
 
-Adresses:
+**Adresses:**
 OpenSearch --> [port 9200](http://localhost:9200)
 
 Backend (Django) --> [port 8000](http://localhost:8000/)
@@ -16,7 +16,7 @@ Frontend (React) --> [port 3000](http://localhost:3000)
 
 End Point of Search --> [http://localhost:8000/api/search/?q=test]
 
-Launch Guide (from the root of the project, works well on Ubuntu 24.04 LTS):
+**Launch Guide** (from the root of the project, works well on Ubuntu 24.04 LTS):
 docker-compose up --build
 cd backend
 
