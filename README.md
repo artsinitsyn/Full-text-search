@@ -18,10 +18,10 @@ End Point of Search --> [test](http://localhost:8000/api/search/?q=test)
 
 
 **Launch Guide** (from the root of the project, works well on Ubuntu 24.04 LTS):
-docker-compose up --build
-cd backend
+```docker-compose up --build```
+```cd backend```
 
-source venv/bin/activate
+```source venv/bin/activate```
 
 pip install requests faker
 
