@@ -9,8 +9,11 @@ Stack:
 
 Adresses:
 OpenSearch --> [port 9200](http://localhost:9200)
+
 Backend (Django) --> [port 8000](http://localhost:8000/)
+
 Frontend (React) --> [port 3000](http://localhost:3000)
+
 End Point of Search --> [http://localhost:8000/api/search/?q=test]
 
 Launch Guide (from the root of the project, works well on Ubuntu 24.04 LTS):
