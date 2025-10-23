@@ -27,13 +27,9 @@ pip install requests faker
 python generate_gutenberg_books.py
 
 curl -X PUT "http://localhost:9200/books/_settings" \
-
   -H "Content-Type: application/json" \
-  
   -d '{
-  
     "index.highlight.max_analyzed_offset": 50000000
-    
 }'
 
 curl "http://localhost:9200/books/_count"
