@@ -19,20 +19,35 @@ End Point of Search --> [http://localhost:8000/api/search/?q=test]
 Launch Guide (from the root of the project, works well on Ubuntu 24.04 LTS):
 docker-compose up --build
 cd backend
+
 source venv/bin/activate
+
 pip install requests faker
+
 python generate_gutenberg_books.py
+
 curl -X PUT "http://localhost:9200/books/_settings" \
+
   -H "Content-Type: application/json" \
+  
   -d '{
+  
     "index.highlight.max_analyzed_offset": 50000000
+    
 }'
+
 curl "http://localhost:9200/books/_count"
+
 cntr+d
+
 docker-compose restart backend
+
 cd ..
+
 cd frontend
+
 npm install
+
 npm start
 
 
