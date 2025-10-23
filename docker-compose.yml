@@ -1,0 +1,49 @@
+version: '3.8'
+services:
+  opensearch:
+    image: opensearchproject/opensearch:2.9.0
+    container_name: opensearch
+    environment:
+      - discovery.type=single-node
+      - "OPENSEARCH_JAVA_OPTS=-Xms512m -Xmx512m"
+      - plugins.security.disabled=true
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - 9200:9200
+    volumes:
+      - opensearch-data:/usr/share/opensearch/data
+
+  opensearch-dashboards:
+    image: opensearchproject/opensearch-dashboards:2.9.0
+    container_name: os-dashboards
+    depends_on:
+      - opensearch
+    ports:
+      - 5601:5601
+
+  backend:
+    build: ./backend
+    container_name: poc-backend
+    env_file:
+      - backend/compose_settings.env
+    depends_on:
+      - opensearch
+    ports:
+      - 8000:8000
+    volumes:
+      - ./backend:/code
+    command: python manage.py runserver 0.0.0.0:8000
+
+  frontend:
+    build: ./frontend
+    container_name: poc-frontend
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend
+
+volumes:
+  opensearch-data:
