@@ -1,0 +1,7 @@
+Django>=4.2
+djangorestframework
+uvicorn
+opensearch-py>=2.0.0
+python-multipart
+gunicorn
+django-cors-headers
