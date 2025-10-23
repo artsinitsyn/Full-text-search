@@ -14,7 +14,8 @@ Backend (Django) --> [port 8000](http://localhost:8000/)
 
 Frontend (React) --> [port 3000](http://localhost:3000)
 
-End Point of Search --> [http://localhost:8000/api/search/?q=test]
+End Point of Search --> [test](http://localhost:8000/api/search/?q=test)
+
 
 **Launch Guide** (from the root of the project, works well on Ubuntu 24.04 LTS):
 docker-compose up --build
