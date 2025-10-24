@@ -3,6 +3,8 @@ My simple library explorer. Using this application, you can organize a full-text
 
 App testing --> [video](https://drive.google.com/file/d/16ewltCEgboC2UQvLKUNbcHeSTDAnhq-B/view?usp=sharing)
 
+![Application design]([https://www.example.com/image.jpg](https://drive.google.com/file/d/10IWq6bbJeD5M9KGoVSfv_D0ATG54-KrG/view?usp=sharing))
+
 **Stack:**
 - Django REST Framework
 - OpenSearch
