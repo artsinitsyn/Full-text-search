@@ -3,7 +3,7 @@ My simple library explorer. Using this application, you can organize a full-text
 
 App testing --> [video](https://drive.google.com/file/d/16ewltCEgboC2UQvLKUNbcHeSTDAnhq-B/view?usp=sharing)
 
-![Application design](https://drive.google.com/file/d/10IWq6bbJeD5M9KGoVSfv_D0ATG54-KrG/view?usp=sharing/Screenshot from 2025-10-24 14-04-54.png)
+![Application design](https://drive.google.com/file/d/10IWq6bbJeD5M9KGoVSfv_D0ATG54-KrG/view?usp=sharing/Screenshot_from_2025-10-24_14-04-54.png)
 
 **Stack:**
 - Django REST Framework
